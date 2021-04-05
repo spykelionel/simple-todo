@@ -1,0 +1,73 @@
+@font-face {
+    src: url(MCoXzAb429DbBilWLLiE37v4LfQJwHbn.ttf);
+    font-family: 'gayath';
+}
+body {
+    padding: 10%;
+    margin: 50px;
+    font-family: 'gayath';
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    /* font-family: 'gat'; */
+    letter-spacing: 5px;
+}
+label {
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+li {
+    background: #000;
+}
+
+.button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(100, 100, 199);
+    margin: 5px;
+    outline-style: none;
+    background: rgba(236, 229, 229, 0.39);
+    border-radius: 5px;
+}
+
+#add,#save-me {
+    color: #fff;
+    background: green;
+    transition: 1s ease;
+}
+#add:hover {
+    color: green;
+    background: rgb(173, 170, 170);
+}
+
+#delete-me {
+    background: red;
+    color: #fff;
+    transition: 1s ease;
+}
+#delete-me:hover {
+    color: red;
+    background: rgb(173, 170, 170);
+}
+
+#edit-me {
+    background: blue;
+    color: #fff;
+    transition: 1s ease;
+}
+#edit-me:hover {
+    color: blue;
+    background: rgb(173, 170, 170);
+}
