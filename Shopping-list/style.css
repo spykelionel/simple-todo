@@ -1,3 +1,10 @@
+:root {
+    --primary: blue;
+    --secondary: rgba(236, 229, 229, 0.39);
+    --success: green;
+    --danger: rgb(228, 40, 40);
+}
+
 @font-face {
     src: url(MCoXzAb429DbBilWLLiE37v4LfQJwHbn.ttf);
     font-family: 'gayath';
@@ -19,7 +26,9 @@ label {
     font-size: 1.4em;
 }
 li {
-    background: #000;
+    padding: 5px;
+    list-style-type: circle;
+    font-size: 1.25em;
 }
 
 .button {
@@ -38,36 +47,36 @@ input {
     border-bottom: 1px solid rgb(100, 100, 199);
     margin: 5px;
     outline-style: none;
-    background: rgba(236, 229, 229, 0.39);
+    background: var(--secondary);
     border-radius: 5px;
 }
 
 #add,#save-me {
     color: #fff;
-    background: green;
+    background: var(--success);
     transition: 1s ease;
 }
 #add:hover {
-    color: green;
+    color: var(--success);
     background: rgb(173, 170, 170);
 }
 
 #delete-me {
-    background: red;
+    background: var(--danger);
     color: #fff;
     transition: 1s ease;
 }
 #delete-me:hover {
-    color: red;
+    color: var(--danger);
     background: rgb(173, 170, 170);
 }
 
 #edit-me {
-    background: blue;
+    background: var(--primary);
     color: #fff;
     transition: 1s ease;
 }
 #edit-me:hover {
-    color: blue;
-    background: rgb(173, 170, 170);
+    color: var(--primary);
+    background: var(--secondary);
 }
