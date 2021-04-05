@@ -4,7 +4,7 @@ let ul = document.getElementById("mylist");
 
 
 const addItem = (e) => {
-  item.value = "";
+  
   let li = document.createElement("li");
   let deleteButton = document.createElement("button");
   let editButton = document.createElement("button");
@@ -24,7 +24,8 @@ const addItem = (e) => {
   deleteButton.textContent = "delete";
   editButton.textContent = "edit";
   saveButton.textContent = "Save";
-  li.textContent = "Am a new item";
+  li.textContent = item.value;
+  item.value = "";
 
   const saveMe = (e) => {
     li.textContent = input.value;
