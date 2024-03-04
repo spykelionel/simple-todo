@@ -1,82 +1,83 @@
 :root {
-    --primary: blue;
-    --secondary: rgba(236, 229, 229, 0.39);
-    --success: green;
-    --danger: rgb(228, 40, 40);
+  --primary: blue;
+  --secondary: rgba(236, 229, 229, 0.39);
+  --success: green;
+  --danger: rgb(228, 40, 40);
 }
 
 @font-face {
-    src: url(MCoXzAb429DbBilWLLiE37v4LfQJwHbn.ttf);
-    font-family: 'gayath';
+  src: url(font.ttf);
+  font-family: "gayath";
 }
 body {
-    padding: 10%;
-    margin: 50px;
-    font-family: 'gayath';
+  padding: 10%;
+  margin: 50px;
+  font-family: "gayath";
 }
 
 h1 {
-    text-align: center;
-    font-size: 2em;
-    /* font-family: 'gat'; */
-    letter-spacing: 5px;
+  text-align: center;
+  font-size: 2em;
+  /* font-family: 'gat'; */
+  letter-spacing: 5px;
 }
 label {
-    font-weight: bolder;
-    font-size: 1.4em;
+  font-weight: bolder;
+  font-size: 1.4em;
 }
 li {
-    padding: 5px;
-    list-style-type: circle;
-    font-size: 1.25em;
+  padding: 5px;
+  list-style-type: circle;
+  font-size: 1.25em;
 }
 
 .button {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    outline-style: none;
-    border: none;
-    cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
 }
 
 input {
-    padding: 5px;
-    border: none;
-    border-bottom: 1px solid rgb(100, 100, 199);
-    margin: 5px;
-    outline-style: none;
-    background: var(--secondary);
-    border-radius: 5px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(100, 100, 199);
+  margin: 5px;
+  outline-style: none;
+  background: var(--secondary);
+  border-radius: 5px;
 }
 
-#add,#save-me {
-    color: #fff;
-    background: var(--success);
-    transition: 1s ease;
+#add,
+#save-me {
+  color: #fff;
+  background: var(--success);
+  transition: 1s ease;
 }
 #add:hover {
-    color: var(--success);
-    background: rgb(173, 170, 170);
+  color: var(--success);
+  background: rgb(173, 170, 170);
 }
 
 #delete-me {
-    background: var(--danger);
-    color: #fff;
-    transition: 1s ease;
+  background: var(--danger);
+  color: #fff;
+  transition: 1s ease;
 }
 #delete-me:hover {
-    color: var(--danger);
-    background: rgb(173, 170, 170);
+  color: var(--danger);
+  background: rgb(173, 170, 170);
 }
 
 #edit-me {
-    background: var(--primary);
-    color: #fff;
-    transition: 1s ease;
+  background: var(--primary);
+  color: #fff;
+  transition: 1s ease;
 }
 #edit-me:hover {
-    color: var(--primary);
-    background: var(--secondary);
+  color: var(--primary);
+  background: var(--secondary);
 }
