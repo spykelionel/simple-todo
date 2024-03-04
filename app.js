@@ -2,9 +2,7 @@ let item = document.getElementById("item");
 let button = document.getElementById("add");
 let ul = document.getElementById("mylist");
 
-
 const addItem = (e) => {
-  
   let li = document.createElement("li");
   let deleteButton = document.createElement("button");
   let editButton = document.createElement("button");
@@ -18,8 +16,8 @@ const addItem = (e) => {
   editButton.classList.add("button");
   saveButton.setAttribute("id", "save-me");
   saveButton.classList.add("button");
-  div.classList.add('some-item');
-  
+  div.classList.add("some-item");
+
   input.setAttribute("placeholder", "Enter new item");
   deleteButton.textContent = "delete";
   editButton.textContent = "edit";
@@ -38,7 +36,13 @@ const addItem = (e) => {
   };
 
   const editMe = (e) => {
+    const textNodes = Array.from(li.childNodes).filter(
+      (node) => node.nodeType === Node.TEXT_NODE
+    );
+    const prevText = textNodes.map((node) => node.textContent.trim()).join("");
+
     item.value = "";
+    input.value = prevText;
     input.focus();
     input.select();
     div.appendChild(input);
