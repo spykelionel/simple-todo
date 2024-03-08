@@ -48,6 +48,7 @@ const addItem = (e) => {
     div.appendChild(input);
     div.appendChild(saveButton).addEventListener("click", saveMe);
   };
+
   const deleteMe = (e) => {
     ul.removeChild(li);
   };
@@ -56,8 +57,6 @@ const addItem = (e) => {
   div.appendChild(deleteButton).addEventListener("click", deleteMe);
   li.appendChild(div);
   ul.appendChild(li).appendChild(div);
-
-  editButton.addEventListener("click", editMe);
 
   div.style.display = "inline";
 };
